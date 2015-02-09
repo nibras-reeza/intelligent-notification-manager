@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/DayOfWeek"/>
+    <fragment 
+    
+    android:id="@+id/day_list"
+    android:name="lk.apiit.isei2014.nns.inm.ui.schedule.HourListFragment"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    tools:context="lk.apiit.isei2014.nns.inm.DayListActivity"
+    tools:layout="@android:layout/list_content" />
+
+    
+</LinearLayout>

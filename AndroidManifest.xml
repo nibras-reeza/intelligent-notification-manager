@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="lk.apiit.isei2014.nns.inm"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="lk.apiit.isei2014.nns.inm.ui.contacts.ContactListActivity"
+            android:label="@string/title_contact_list" >
+               
+        </activity>
+        <activity
+            android:name="lk.apiit.isei2014.nns.inm.ui.contacts.ContactDetailActivity"
+            android:label="@string/title_contact_detail"
+            android:parentActivityName="lk.apiit.isei2014.nns.inm.ui.contacts.ContactListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="lk.apiit.isei2014.nns.inm.ContactListActivity" />
+        </activity>
+        <activity
+            android:name="lk.apiit.isei2014.nns.inm.ui.schedule.DayListActivity"
+            android:label="@string/title_day_list" >
+        </activity>
+        <activity
+            android:name="lk.apiit.isei2014.nns.inm.ui.schedule.HourListActivity"
+            android:label="@string/title_activity_hour_list"
+            android:parentActivityName="lk.apiit.isei2014.nns.inm.ui.schedule.DayListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="lk.apiit.isei2014.nns.inm.ui.schedule.DayListActivity" />
+        </activity>
+        <activity
+            android:name="lk.apiit.isei2014.nns.inm.ui.rules.RuleListActivity"
+            android:label="@string/app_name" >
+         <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="lk.apiit.isei2014.nns.inm.ui.rules.RuleDetailActivity"
+            android:label="@string/title_rule_detail"
+            android:parentActivityName="lk.apiit.isei2014.nns.inm.ui.rules.RuleListActivity"
+            android:theme="@android:style/Theme.Holo.Dialog" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="lk.apiit.isei2014.nns.inm.RuleListActivity" />
+        </activity>
+    </application>
+
+</manifest>

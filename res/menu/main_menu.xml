@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/Add_Rule"
+          android:icon="@drawable/ic_contact_picture_holo_light"
+          android:title="@string/add_rule"
+          />
+    <item android:id="@+id/Contacts"
+          android:icon="@drawable/ic_contact_picture_holo_light"
+          android:title="@string/contacts" />
+    <item android:id="@+id/Schedule"
+          android:icon="@drawable/ic_contact_picture_holo_light"
+          android:title="@string/schedule" />
+    <item android:id="@+id/Rules"
+          android:icon="@drawable/ic_contact_picture_holo_light"
+          android:title="@string/rules" />
+    <item android:id="@+id/help"
+          android:icon="@drawable/ic_contact_picture_holo_light"
+          android:title="@string/help" />
+</menu>
+

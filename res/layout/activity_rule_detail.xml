@@ -1,0 +1,8 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rule_detail_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="lk.apiit.isei2014.nns.inm.ui.rules.RuleDetailActivity"
+    tools:ignore="MergeRootFrame" />
+
